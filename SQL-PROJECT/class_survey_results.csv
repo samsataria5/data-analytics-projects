@@ -1,0 +1,16 @@
+StudentID,FavoriteSubject,StudyHoursperWeek,PreferredLearningMethod,DeviceUsedforLearning,TestScore
+101,Math,10,Visual,Laptop,85
+102,Science,8,Auditory,Tablet,78
+103,English,12,Reading/Writing,Desktop,90
+104,History,6,Kinesthetic,Smartphone,70
+105,Math,15,Visual,Laptop,92
+106,Science,7,Reading/Writing,Tablet,80
+107,English,9,Visual,Smartphone,75
+108,History,5,Auditory,Laptop,65
+109,Science,14,Kinesthetic,Desktop,88
+110,Math,11,Reading/Writing,Tablet,82
+111,English,13,Visual,Laptop,91
+112,Science,9,Auditory,Laptop,77
+113,Math,16,Kinesthetic,Tablet,84
+114,History,6,Reading/Writing,Laptop,73
+115,Science,10,Visual,Desktop,86

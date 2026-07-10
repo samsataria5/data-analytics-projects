@@ -19,4 +19,32 @@ SELECT * FROM Students WHERE Class ='SS2';
 
 SELECT * FROM Students WHERE Class ='SS1';
 SELECT * FROM Students WHERE Class Like 'SS%';
+
+WITH subject_list AS (
+    SELECT favoritesubject,
+           COUNT(*) AS StudentCount
+    FROM class_survey_results
+    GROUP BY favoritesubject
+)
+SELECT *
+FROM subject_list
+WHERE StudentCount = (
+    SELECT MAX(StudentCount)
+    FROM subject_list
+);
+
+WITH subject_list AS (
+    SELECT preferredlearnin,
+           COUNT(*) AS StudentCount
+    FROM class_survey_results
+    GROUP BY preferredlearnin
+)
+SELECT *
+FROM subject_list
+WHERE StudentCount = (
+    SELECT MAX(StudentCount)
+    FROM subject_list
+);
+
 SELECT AVG(Age) AS AverageAge FROM Students;
+SELECT AVG(studyhoursperwee)AS Avestudyhours FROM class_survey_results;
